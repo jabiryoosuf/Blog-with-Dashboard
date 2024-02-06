@@ -5,10 +5,11 @@ import SignIn from "./pages/SignIn";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Header from "./components/Header";
+import FooterComp from "./components/FooterComp";
 function App() {
   return (
     <BrowserRouter>
-    <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -16,6 +17,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
+      <FooterComp />
     </BrowserRouter>
   );
 }
